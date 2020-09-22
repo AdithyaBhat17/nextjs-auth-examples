@@ -1,0 +1,24 @@
+{
+  "name": "magic-passwordless",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@hapi/iron": "^6.0.0",
+    "@magic-sdk/admin": "^1.2.2",
+    "cookie": "^0.4.1",
+    "magic-sdk": "^2.6.0",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "^0.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "typescript": "^4.0.3"
+  }
+}
