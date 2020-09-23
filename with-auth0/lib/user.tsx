@@ -1,4 +1,11 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+import { ChildrenProps } from "../components/Layout";
 import { Auth0User, User } from "../interfaces";
 
 let userState: Auth0User;
@@ -8,8 +15,7 @@ const UserContext = createContext<User>({
   loading: false,
 });
 
-// @ts-ignore
-export default function UserProvider({ children }) {
+export default function UserProvider({ children }: ChildrenProps) {
   const value = useUserValue();
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 }
